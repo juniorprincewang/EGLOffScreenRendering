@@ -28,6 +28,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <vector>
+#include <string>
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
@@ -249,7 +250,7 @@ GLuint init_triangle()
 		}
 
 		glDeleteProgram(programObject);
-		return FALSE;
+		return 0;
 	}
 	// Store the program object
 	return programObject;
